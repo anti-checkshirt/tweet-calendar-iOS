@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B711AE8221BAB37F0000634F /* Calendar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B711AE8121BAB37F0000634F /* Calendar.storyboard */; };
+		B711AE8421BAB3BB0000634F /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B711AE8321BAB3BB0000634F /* CalendarViewController.swift */; };
+		B711AE8721BAB7F10000634F /* CalendarCollectionViewCella.swift in Sources */ = {isa = PBXBuildFile; fileRef = B711AE8521BAB7F10000634F /* CalendarCollectionViewCella.swift */; };
 		B7B453D421AD972300144DC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B453D321AD972300144DC3 /* AppDelegate.swift */; };
 		B7B453DB21AD972400144DC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7B453DA21AD972400144DC3 /* Assets.xcassets */; };
 		B7B453DE21AD972400144DC3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7B453DC21AD972400144DC3 /* LaunchScreen.storyboard */; };
@@ -19,6 +22,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B711AE8121BAB37F0000634F /* Calendar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Calendar.storyboard; sourceTree = "<group>"; };
+		B711AE8321BAB3BB0000634F /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		B711AE8521BAB7F10000634F /* CalendarCollectionViewCella.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCollectionViewCella.swift; sourceTree = "<group>"; };
 		B7B453D021AD972300144DC3 /* TweetCalendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TweetCalendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7B453D321AD972300144DC3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7B453DA21AD972400144DC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -52,6 +58,7 @@
 		B711AE8021BAB3480000634F /* StoryBoard */ = {
 			isa = PBXGroup;
 			children = (
+				B711AE8121BAB37F0000634F /* Calendar.storyboard */,
 			);
 			path = StoryBoard;
 			sourceTree = "<group>";
@@ -111,6 +118,8 @@
 			isa = PBXGroup;
 			children = (
 				B7B453D321AD972300144DC3 /* AppDelegate.swift */,
+				B711AE8321BAB3BB0000634F /* CalendarViewController.swift */,
+				B711AE8521BAB7F10000634F /* CalendarCollectionViewCella.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -181,6 +190,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B711AE8221BAB37F0000634F /* Calendar.storyboard in Resources */,
 				B7B453DE21AD972400144DC3 /* LaunchScreen.storyboard in Resources */,
 				B7B453DB21AD972400144DC3 /* Assets.xcassets in Resources */,
 			);
@@ -198,10 +208,11 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/RxCocoaSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SDWebImage.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SnapKit.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SwiftyUserDefaults.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
 			);
 			outputFileListPaths = (
 			);
@@ -218,7 +229,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B711AE8421BAB3BB0000634F /* CalendarViewController.swift in Sources */,
 				B7B453D421AD972300144DC3 /* AppDelegate.swift in Sources */,
+				B711AE8721BAB7F10000634F /* CalendarCollectionViewCella.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,6 +370,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FJMPLD4D4X;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -379,6 +393,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FJMPLD4D4X;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
