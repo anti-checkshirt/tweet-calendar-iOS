@@ -6,7 +6,6 @@
 
 ```bash
 $ git clone https://github.com/anti-checkshirt/tweet-calendar-iOS.git
-$ cd tweet-calender-iOS
 ```
 
 ## インストール
@@ -14,6 +13,7 @@ $ cd tweet-calender-iOS
 クローンしたらこれを実行してください。
 
 ```bash
+& cd tweet-calendar-iOS
 $ carthage bootstrap --platform iOS
 ```
 
