@@ -49,6 +49,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B711AE8021BAB3480000634F /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
 		B7B453C721AD972300144DC3 = {
 			isa = PBXGroup;
 			children = (
@@ -69,7 +76,7 @@
 		B7B453D221AD972300144DC3 /* TweetCalendar */ = {
 			isa = PBXGroup;
 			children = (
-				B7B453F621AD99A400144DC3 /* StoryBoard */,
+				B711AE8021BAB3480000634F /* StoryBoard */,
 				B7B453F521AD999900144DC3 /* Model */,
 				B7B453F421AD999000144DC3 /* View */,
 				B7B453F321AD998B00144DC3 /* API */,
@@ -113,13 +120,6 @@
 			children = (
 			);
 			name = Model;
-			sourceTree = "<group>";
-		};
-		B7B453F621AD99A400144DC3 /* StoryBoard */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = StoryBoard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
