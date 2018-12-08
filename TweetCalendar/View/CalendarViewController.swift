@@ -7,15 +7,13 @@
 //
 
 import UIKit
-import RxSwift
-import RxCocoa
 import SnapKit
 
 class CalendarViewController: UIViewController {
     
     @IBOutlet private var collectionView: UICollectionView!
-    @IBOutlet private var nextSearchButton: UIBarButtonItem!
-    let disposeBag = DisposeBag()
+    
+    private var searchBar: UISearchController!
     
     private var calendar = Calendar.current
     private var currentDate = Date()
@@ -33,6 +31,11 @@ class CalendarViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        searchBar = UISearchController(searchResultsController: nil)
+        searchBar.obscuresBackgroundDuringPresentation = false
+        navigationItem.searchController = searchBar
+        navigationItem.hidesSearchBarWhenScrolling = false
+        
         let date = Date()
         let year = calendar.component(.year, from: date)
         let month = calendar.component(.month, from: date)
@@ -47,20 +50,6 @@ class CalendarViewController: UIViewController {
         
         collectionView.delegate = self
         collectionView.dataSource = self
-        
-        nextTappend()
-    }
-    
-    private func nextTappend() {
-        nextSearchButton.rx.tap.subscribe(onNext: { _ in
-            let searchView = SearchView()
-            searchView.frame = self.view.bounds
-            searchView.frame.origin.y += self.view.frame.height
-            self.view.addSubview(searchView)
-            UIView.animate(withDuration: 0.5, animations: {
-                searchView.frame.origin.y -= self.view.frame.height
-            })
-        }).disposed(by: disposeBag)
     }
 }
 
