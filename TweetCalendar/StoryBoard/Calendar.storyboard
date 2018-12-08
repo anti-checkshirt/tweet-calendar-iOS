@@ -85,20 +85,15 @@
                                             <rect key="frame" x="0.0" y="0.0" width="53" height="64"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="noF-eu-x4b">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="noF-eu-x4b">
                                                     <rect key="frame" x="0.0" y="0.0" width="53" height="64"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                         </view>
-                                        <constraints>
-                                            <constraint firstItem="noF-eu-x4b" firstAttribute="leading" secondItem="xAk-A2-PoV" secondAttribute="leading" id="54g-FP-3FS"/>
-                                            <constraint firstAttribute="bottom" secondItem="noF-eu-x4b" secondAttribute="bottom" id="Fwf-2m-uSI"/>
-                                            <constraint firstAttribute="trailing" secondItem="noF-eu-x4b" secondAttribute="trailing" id="bpi-Av-4PX"/>
-                                            <constraint firstItem="noF-eu-x4b" firstAttribute="top" secondItem="xAk-A2-PoV" secondAttribute="top" id="wCi-1m-bL7"/>
-                                        </constraints>
                                         <connections>
                                             <outlet property="label" destination="noF-eu-x4b" id="vYV-O3-52w"/>
                                         </connections>
@@ -123,6 +118,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="collectionView" destination="dyD-nM-bul" id="AIy-WY-Atu"/>
+                        <outlet property="nextSearchButton" destination="sQ6-HG-1k0" id="v2H-CC-hpX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bMv-ig-LjE" userLabel="First Responder" sceneMemberID="firstResponder"/>

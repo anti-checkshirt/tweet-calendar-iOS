@@ -7,12 +7,16 @@
 //
 
 import UIKit
+import SnapKit
 
 class CalendarCollectionViewCella: UICollectionViewCell {
     @IBOutlet private var label: UILabel!
     
     func setUp(text: String, at indexPath: IndexPath) {
 //        label.text = text
+        label.snp.makeConstraints { make in
+            make.top.left.right.bottom.equalToSuperview()
+        }
         label.text = " "
         label.layer.borderWidth = 2
         label.layer.borderColor = UIColor.white.cgColor
