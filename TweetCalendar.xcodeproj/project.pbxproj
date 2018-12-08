@@ -22,6 +22,7 @@
 		B7B453EF21AD98D100144DC3 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7B453E921AD98D100144DC3 /* RxCocoa.framework */; };
 		B7B453F021AD98D100144DC3 /* SwiftyUserDefaults.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7B453EA21AD98D100144DC3 /* SwiftyUserDefaults.framework */; };
 		B7B453F121AD98D100144DC3 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7B453EB21AD98D100144DC3 /* RxSwift.framework */; };
+		B7EEA73321BBE2FB00386E4B /* Search.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7EEA73221BBE2FB00386E4B /* Search.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		B7B453E921AD98D100144DC3 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
 		B7B453EA21AD98D100144DC3 /* SwiftyUserDefaults.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyUserDefaults.framework; path = Carthage/Build/iOS/SwiftyUserDefaults.framework; sourceTree = "<group>"; };
 		B7B453EB21AD98D100144DC3 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		B7EEA73221BBE2FB00386E4B /* Search.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Search.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				B711AE8121BAB37F0000634F /* Calendar.storyboard */,
+				B7EEA73221BBE2FB00386E4B /* Search.xib */,
 			);
 			path = StoryBoard;
 			sourceTree = "<group>";
@@ -225,6 +228,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B711AE8221BAB37F0000634F /* Calendar.storyboard in Resources */,
+				B7EEA73321BBE2FB00386E4B /* Search.xib in Resources */,
 				B7B453DE21AD972400144DC3 /* LaunchScreen.storyboard in Resources */,
 				B7B453DB21AD972400144DC3 /* Assets.xcassets in Resources */,
 			);

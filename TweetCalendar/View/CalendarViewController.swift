@@ -54,12 +54,12 @@ class CalendarViewController: UIViewController {
     private func nextTappend() {
         nextSearchButton.rx.tap.subscribe(onNext: { _ in
             let searchView = SearchView()
+            searchView.frame = self.view.bounds
+            searchView.frame.origin.y += self.view.frame.height
             self.view.addSubview(searchView)
-            searchView.snp.makeConstraints { make in
-                make.left.right.equalToSuperview()
-                make.top.equalToSuperview().offset(100)
-            }
-            searchView.backgroundColor = .white
+            UIView.animate(withDuration: 0.5, animations: {
+                searchView.frame.origin.y -= self.view.frame.height
+            })
         }).disposed(by: disposeBag)
     }
 }
