@@ -10,6 +10,7 @@
 		B711AE8221BAB37F0000634F /* Calendar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B711AE8121BAB37F0000634F /* Calendar.storyboard */; };
 		B711AE8421BAB3BB0000634F /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B711AE8321BAB3BB0000634F /* CalendarViewController.swift */; };
 		B711AE8721BAB7F10000634F /* CalendarCollectionViewCella.swift in Sources */ = {isa = PBXBuildFile; fileRef = B711AE8521BAB7F10000634F /* CalendarCollectionViewCella.swift */; };
+		B711AE8C21BABF550000634F /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = B711AE8B21BABF550000634F /* UIColor+Hex.swift */; };
 		B7B453D421AD972300144DC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B453D321AD972300144DC3 /* AppDelegate.swift */; };
 		B7B453DB21AD972400144DC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7B453DA21AD972400144DC3 /* Assets.xcassets */; };
 		B7B453DE21AD972400144DC3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7B453DC21AD972400144DC3 /* LaunchScreen.storyboard */; };
@@ -25,6 +26,7 @@
 		B711AE8121BAB37F0000634F /* Calendar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Calendar.storyboard; sourceTree = "<group>"; };
 		B711AE8321BAB3BB0000634F /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		B711AE8521BAB7F10000634F /* CalendarCollectionViewCella.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCollectionViewCella.swift; sourceTree = "<group>"; };
+		B711AE8B21BABF550000634F /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
 		B7B453D021AD972300144DC3 /* TweetCalendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TweetCalendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7B453D321AD972300144DC3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7B453DA21AD972400144DC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -63,6 +65,31 @@
 			path = StoryBoard;
 			sourceTree = "<group>";
 		};
+		B711AE8A21BABF410000634F /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B711AE8B21BABF550000634F /* UIColor+Hex.swift */,
+			);
+			name = Extension;
+			path = View;
+			sourceTree = "<group>";
+		};
+		B711AE8D21BB60310000634F /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				B711AE8321BAB3BB0000634F /* CalendarViewController.swift */,
+				B711AE8521BAB7F10000634F /* CalendarCollectionViewCella.swift */,
+			);
+			name = Calendar;
+			sourceTree = "<group>";
+		};
+		B711AE8E21BB60430000634F /* Search */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
 		B7B453C721AD972300144DC3 = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +113,7 @@
 				B711AE8021BAB3480000634F /* StoryBoard */,
 				B7B453F521AD999900144DC3 /* Model */,
 				B7B453F421AD999000144DC3 /* View */,
+				B711AE8A21BABF410000634F /* Extension */,
 				B7B453F321AD998B00144DC3 /* API */,
 				B7B453DA21AD972400144DC3 /* Assets.xcassets */,
 				B7B453DC21AD972400144DC3 /* LaunchScreen.storyboard */,
@@ -118,8 +146,8 @@
 			isa = PBXGroup;
 			children = (
 				B7B453D321AD972300144DC3 /* AppDelegate.swift */,
-				B711AE8321BAB3BB0000634F /* CalendarViewController.swift */,
-				B711AE8521BAB7F10000634F /* CalendarCollectionViewCella.swift */,
+				B711AE8E21BB60430000634F /* Search */,
+				B711AE8D21BB60310000634F /* Calendar */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -230,6 +258,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B711AE8421BAB3BB0000634F /* CalendarViewController.swift in Sources */,
+				B711AE8C21BABF550000634F /* UIColor+Hex.swift in Sources */,
 				B7B453D421AD972300144DC3 /* AppDelegate.swift in Sources */,
 				B711AE8721BAB7F10000634F /* CalendarCollectionViewCella.swift in Sources */,
 			);

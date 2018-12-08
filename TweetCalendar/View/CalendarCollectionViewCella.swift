@@ -12,7 +12,26 @@ class CalendarCollectionViewCella: UICollectionViewCell {
     @IBOutlet private var label: UILabel!
     
     func setUp(text: String, at indexPath: IndexPath) {
-        label.text = text
+//        label.text = text
+        label.text = " "
+        label.layer.borderWidth = 2
+        label.layer.borderColor = UIColor.white.cgColor
+        label.clipsToBounds = true
+        label.layer.cornerRadius = 5
+        
+        switch arc4random_uniform(5) {
+        case 0:
+            label.backgroundColor = UIColor(hex: "ebedf0")
+        case 1:
+            label.backgroundColor = UIColor(hex: "c6e48b")
+        case 2:
+            label.backgroundColor = UIColor(hex: "7bc96f")
+        case 3:
+            label.backgroundColor = UIColor(hex: "239a3b")
+        case 4:
+            label.backgroundColor = UIColor(hex: "196127")
+        default: break
+        }
         
         //Colorの設定
         if indexPath.row == 0 {

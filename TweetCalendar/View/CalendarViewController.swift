@@ -40,7 +40,7 @@ class CalendarViewController: UIViewController {
         
         firstWeek(year: year, month: month)
         
-//        collectionView.delegate = self
+        collectionView.delegate = self
         collectionView.dataSource = self
     }
 }
@@ -54,9 +54,16 @@ extension CalendarViewController: UICollectionViewDataSource {
     //Cellに値を設定
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! CalendarCollectionViewCella
-        cell.backgroundColor = .white
         cell.setUp(text: Array[indexPath.row], at: indexPath)
         return cell
+    }
+}
+
+extension CalendarViewController: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let returnSize = CGSize(width: collectionView.frame.width / 7.1, height: collectionView.frame.height / 6)
+        
+        return returnSize
     }
 }
 
