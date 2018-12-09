@@ -22,6 +22,7 @@
 		B7B453F021AD98D100144DC3 /* SwiftyUserDefaults.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7B453EA21AD98D100144DC3 /* SwiftyUserDefaults.framework */; };
 		B7B453F121AD98D100144DC3 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7B453EB21AD98D100144DC3 /* RxSwift.framework */; };
 		B7EEA73521BD7A4E00386E4B /* tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EEA73421BD7A4E00386E4B /* tweet.swift */; };
+		B7EEA73821BD85F100386E4B /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EEA73721BD85F100386E4B /* SearchView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		B7B453EA21AD98D100144DC3 /* SwiftyUserDefaults.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyUserDefaults.framework; path = Carthage/Build/iOS/SwiftyUserDefaults.framework; sourceTree = "<group>"; };
 		B7B453EB21AD98D100144DC3 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 		B7EEA73421BD7A4E00386E4B /* tweet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tweet.swift; sourceTree = "<group>"; };
+		B7EEA73721BD85F100386E4B /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				B7B453D321AD972300144DC3 /* AppDelegate.swift */,
+				B7EEA73621BD85C900386E4B /* Search */,
 				B711AE8D21BB60310000634F /* Calendar */,
 			);
 			path = View;
@@ -155,6 +158,14 @@
 			children = (
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		B7EEA73621BD85C900386E4B /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				B7EEA73721BD85F100386E4B /* SearchView.swift */,
+			);
+			path = Search;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +269,7 @@
 				B711AE8421BAB3BB0000634F /* CalendarViewController.swift in Sources */,
 				B7EEA73521BD7A4E00386E4B /* tweet.swift in Sources */,
 				B711AE8C21BABF550000634F /* UIColor+Hex.swift in Sources */,
+				B7EEA73821BD85F100386E4B /* SearchView.swift in Sources */,
 				B7B453D421AD972300144DC3 /* AppDelegate.swift in Sources */,
 				B711AE8721BAB7F10000634F /* CalendarCollectionViewCella.swift in Sources */,
 				B711AE9221BB637B0000634F /* UITextField.swift in Sources */,
