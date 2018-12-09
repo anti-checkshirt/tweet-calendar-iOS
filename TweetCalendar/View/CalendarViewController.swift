@@ -13,8 +13,6 @@ class CalendarViewController: UIViewController {
     
     @IBOutlet private var collectionView: UICollectionView!
     
-    private var searchBar: UISearchController!
-    
     private var calendar = Calendar.current
     private var currentDate = Date()
     private var numberOfItems: Int?
@@ -30,11 +28,6 @@ class CalendarViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        searchBar = UISearchController(searchResultsController: nil)
-        searchBar.obscuresBackgroundDuringPresentation = false
-        navigationItem.searchController = searchBar
-        navigationItem.hidesSearchBarWhenScrolling = false
         
         let date = Date()
         let year = calendar.component(.year, from: date)

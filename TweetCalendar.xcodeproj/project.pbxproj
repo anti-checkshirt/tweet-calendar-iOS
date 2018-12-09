@@ -21,6 +21,7 @@
 		B7B453EF21AD98D100144DC3 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7B453E921AD98D100144DC3 /* RxCocoa.framework */; };
 		B7B453F021AD98D100144DC3 /* SwiftyUserDefaults.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7B453EA21AD98D100144DC3 /* SwiftyUserDefaults.framework */; };
 		B7B453F121AD98D100144DC3 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7B453EB21AD98D100144DC3 /* RxSwift.framework */; };
+		B7EEA73521BD7A4E00386E4B /* tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EEA73421BD7A4E00386E4B /* tweet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		B7B453E921AD98D100144DC3 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
 		B7B453EA21AD98D100144DC3 /* SwiftyUserDefaults.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyUserDefaults.framework; path = Carthage/Build/iOS/SwiftyUserDefaults.framework; sourceTree = "<group>"; };
 		B7B453EB21AD98D100144DC3 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		B7EEA73421BD7A4E00386E4B /* tweet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tweet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +136,7 @@
 		B7B453F321AD998B00144DC3 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				B7EEA73421BD7A4E00386E4B /* tweet.swift */,
 			);
 			name = API;
 			sourceTree = "<group>";
@@ -253,6 +256,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B711AE8421BAB3BB0000634F /* CalendarViewController.swift in Sources */,
+				B7EEA73521BD7A4E00386E4B /* tweet.swift in Sources */,
 				B711AE8C21BABF550000634F /* UIColor+Hex.swift in Sources */,
 				B7B453D421AD972300144DC3 /* AppDelegate.swift in Sources */,
 				B711AE8721BAB7F10000634F /* CalendarCollectionViewCella.swift in Sources */,
