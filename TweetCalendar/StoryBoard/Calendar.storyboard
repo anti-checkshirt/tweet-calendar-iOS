@@ -114,11 +114,14 @@
                         <viewLayoutGuide key="safeArea" id="5CH-Yd-bWh"/>
                     </view>
                     <navigationItem key="navigationItem" id="ADV-LC-ryX">
-                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="sQ6-HG-1k0"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="DeU-qi-ec9">
+                            <connections>
+                                <action selector="search" destination="k2j-VB-KIk" id="djE-we-PZe"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="collectionView" destination="dyD-nM-bul" id="AIy-WY-Atu"/>
-                        <outlet property="nextSearchButton" destination="sQ6-HG-1k0" id="v2H-CC-hpX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bMv-ig-LjE" userLabel="First Responder" sceneMemberID="firstResponder"/>

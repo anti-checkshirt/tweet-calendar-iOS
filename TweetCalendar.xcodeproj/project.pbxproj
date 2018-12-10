@@ -11,7 +11,6 @@
 		B711AE8421BAB3BB0000634F /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B711AE8321BAB3BB0000634F /* CalendarViewController.swift */; };
 		B711AE8721BAB7F10000634F /* CalendarCollectionViewCella.swift in Sources */ = {isa = PBXBuildFile; fileRef = B711AE8521BAB7F10000634F /* CalendarCollectionViewCella.swift */; };
 		B711AE8C21BABF550000634F /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = B711AE8B21BABF550000634F /* UIColor+Hex.swift */; };
-		B711AE9021BB607E0000634F /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B711AE8F21BB607E0000634F /* SearchView.swift */; };
 		B711AE9221BB637B0000634F /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B711AE9121BB637B0000634F /* UITextField.swift */; };
 		B7B453D421AD972300144DC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B453D321AD972300144DC3 /* AppDelegate.swift */; };
 		B7B453DB21AD972400144DC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7B453DA21AD972400144DC3 /* Assets.xcassets */; };
@@ -22,7 +21,9 @@
 		B7B453EF21AD98D100144DC3 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7B453E921AD98D100144DC3 /* RxCocoa.framework */; };
 		B7B453F021AD98D100144DC3 /* SwiftyUserDefaults.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7B453EA21AD98D100144DC3 /* SwiftyUserDefaults.framework */; };
 		B7B453F121AD98D100144DC3 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7B453EB21AD98D100144DC3 /* RxSwift.framework */; };
-		B7EEA73321BBE2FB00386E4B /* Search.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7EEA73221BBE2FB00386E4B /* Search.xib */; };
+		B7EEA73521BD7A4E00386E4B /* tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EEA73421BD7A4E00386E4B /* tweet.swift */; };
+		B7EEA73821BD85F100386E4B /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EEA73721BD85F100386E4B /* SearchView.swift */; };
+		B7EEA74C21BE9F2F00386E4B /* CalendarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EEA74B21BE9F2F00386E4B /* CalendarViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,7 +31,6 @@
 		B711AE8321BAB3BB0000634F /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		B711AE8521BAB7F10000634F /* CalendarCollectionViewCella.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCollectionViewCella.swift; sourceTree = "<group>"; };
 		B711AE8B21BABF550000634F /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
-		B711AE8F21BB607E0000634F /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		B711AE9121BB637B0000634F /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
 		B7B453D021AD972300144DC3 /* TweetCalendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TweetCalendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7B453D321AD972300144DC3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -43,7 +43,9 @@
 		B7B453E921AD98D100144DC3 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
 		B7B453EA21AD98D100144DC3 /* SwiftyUserDefaults.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyUserDefaults.framework; path = Carthage/Build/iOS/SwiftyUserDefaults.framework; sourceTree = "<group>"; };
 		B7B453EB21AD98D100144DC3 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
-		B7EEA73221BBE2FB00386E4B /* Search.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Search.xib; sourceTree = "<group>"; };
+		B7EEA73421BD7A4E00386E4B /* tweet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tweet.swift; sourceTree = "<group>"; };
+		B7EEA73721BD85F100386E4B /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		B7EEA74B21BE9F2F00386E4B /* CalendarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +69,6 @@
 			isa = PBXGroup;
 			children = (
 				B711AE8121BAB37F0000634F /* Calendar.storyboard */,
-				B7EEA73221BBE2FB00386E4B /* Search.xib */,
 			);
 			path = StoryBoard;
 			sourceTree = "<group>";
@@ -89,14 +90,6 @@
 				B711AE8521BAB7F10000634F /* CalendarCollectionViewCella.swift */,
 			);
 			name = Calendar;
-			sourceTree = "<group>";
-		};
-		B711AE8E21BB60430000634F /* Search */ = {
-			isa = PBXGroup;
-			children = (
-				B711AE8F21BB607E0000634F /* SearchView.swift */,
-			);
-			path = Search;
 			sourceTree = "<group>";
 		};
 		B7B453C721AD972300144DC3 = {
@@ -147,6 +140,7 @@
 		B7B453F321AD998B00144DC3 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				B7EEA73421BD7A4E00386E4B /* tweet.swift */,
 			);
 			name = API;
 			sourceTree = "<group>";
@@ -155,7 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				B7B453D321AD972300144DC3 /* AppDelegate.swift */,
-				B711AE8E21BB60430000634F /* Search */,
+				B7EEA73621BD85C900386E4B /* Search */,
 				B711AE8D21BB60310000634F /* Calendar */,
 			);
 			path = View;
@@ -164,8 +158,17 @@
 		B7B453F521AD999900144DC3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B7EEA74B21BE9F2F00386E4B /* CalendarViewModel.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		B7EEA73621BD85C900386E4B /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				B7EEA73721BD85F100386E4B /* SearchView.swift */,
+			);
+			path = Search;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,7 +231,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B711AE8221BAB37F0000634F /* Calendar.storyboard in Resources */,
-				B7EEA73321BBE2FB00386E4B /* Search.xib in Resources */,
 				B7B453DE21AD972400144DC3 /* LaunchScreen.storyboard in Resources */,
 				B7B453DB21AD972400144DC3 /* Assets.xcassets in Resources */,
 			);
@@ -267,9 +269,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B711AE9021BB607E0000634F /* SearchView.swift in Sources */,
+				B7EEA74C21BE9F2F00386E4B /* CalendarViewModel.swift in Sources */,
 				B711AE8421BAB3BB0000634F /* CalendarViewController.swift in Sources */,
+				B7EEA73521BD7A4E00386E4B /* tweet.swift in Sources */,
 				B711AE8C21BABF550000634F /* UIColor+Hex.swift in Sources */,
+				B7EEA73821BD85F100386E4B /* SearchView.swift in Sources */,
 				B7B453D421AD972300144DC3 /* AppDelegate.swift in Sources */,
 				B711AE8721BAB7F10000634F /* CalendarCollectionViewCella.swift in Sources */,
 				B711AE9221BB637B0000634F /* UITextField.swift in Sources */,
