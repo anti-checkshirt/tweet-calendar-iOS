@@ -44,6 +44,8 @@ class CalendarViewController: UIViewController {
         
         collectionView.delegate = self
         collectionView.dataSource = self
+        
+        CalendarViewModel.getTweet(id: "tomoki_sun", month: "2018-10")
     }
     
     @IBAction private func search() {

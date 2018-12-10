@@ -14,7 +14,7 @@ struct Tweet: Codable {
     let text: String
     
     /// ツイートされた日時
-    let createdAt: Date
+    let createdAt: String
     
     /// Twitterのid
     let id: String
@@ -28,7 +28,7 @@ extension Tweet {
     enum CodingKeys: String, CodingKey {
         case text = "text"
         case createdAt = "tweet_created_at"
-        case id = "screea_name"
+        case id = "screen_name"
         case profileImageURL = "profile_image_url"
     }
 }
